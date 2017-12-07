@@ -139,7 +139,7 @@ items = table_service.query_entities('itemstable', filter="PartitionKey eq 'carm
 for item in items:
     print('Make: ' + item.make)
     print('Model: ' + item.model)
-    print('Year: ' + item.year)
+    print('Year: ' + str(item.year))
     print('Color: ' + item.color)
     print('Price: ' + str(item.price) + '\n')
 
